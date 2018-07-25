@@ -1,0 +1,16 @@
+C:\Users\Flake\documents\visual studio 2017\Projects\WpfADO\WpfADO.Interface\bin\Debug\WpfADO.Interface.exe.config
+C:\Users\Flake\documents\visual studio 2017\Projects\WpfADO\WpfADO.Interface\bin\Debug\WpfADO.Interface.exe
+C:\Users\Flake\documents\visual studio 2017\Projects\WpfADO\WpfADO.Interface\bin\Debug\WpfADO.Interface.pdb
+C:\Users\Flake\documents\visual studio 2017\Projects\WpfADO\WpfADO.Interface\bin\Debug\EntityFramework.dll
+C:\Users\Flake\documents\visual studio 2017\Projects\WpfADO\WpfADO.Interface\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Flake\documents\visual studio 2017\Projects\WpfADO\WpfADO.Interface\bin\Debug\WpfADO.DataAccess.exe
+C:\Users\Flake\documents\visual studio 2017\Projects\WpfADO\WpfADO.Interface\bin\Debug\WpfADO.Core.exe
+C:\Users\Flake\documents\visual studio 2017\Projects\WpfADO\WpfADO.Interface\bin\Debug\WpfADO.DataAccess.pdb
+C:\Users\Flake\documents\visual studio 2017\Projects\WpfADO\WpfADO.Interface\bin\Debug\WpfADO.DataAccess.exe.config
+C:\Users\Flake\documents\visual studio 2017\Projects\WpfADO\WpfADO.Interface\bin\Debug\EntityFramework.xml
+C:\Users\Flake\documents\visual studio 2017\Projects\WpfADO\WpfADO.Interface\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Flake\documents\visual studio 2017\Projects\WpfADO\WpfADO.Interface\bin\Debug\WpfADO.Core.pdb
+C:\Users\Flake\documents\visual studio 2017\Projects\WpfADO\WpfADO.Interface\bin\Debug\WpfADO.Core.exe.config
+C:\Users\Flake\documents\visual studio 2017\Projects\WpfADO\WpfADO.Interface\obj\Debug\WpfADO.Common.csprojResolveAssemblyReference.cache
+C:\Users\Flake\documents\visual studio 2017\Projects\WpfADO\WpfADO.Interface\obj\Debug\WpfADO.Interface.exe
+C:\Users\Flake\documents\visual studio 2017\Projects\WpfADO\WpfADO.Interface\obj\Debug\WpfADO.Interface.pdb

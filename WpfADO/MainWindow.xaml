@@ -1,0 +1,59 @@
+﻿<Window x:Class="WpfADO.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfADO"
+        mc:Ignorable="d"
+        Title="Mitra Integrasi Informatika" Height="400" Width="800">
+    <Grid>
+        <TabControl HorizontalAlignment="Left" Height="370" VerticalAlignment="Top" Width="790" RenderTransformOrigin="0.484,0.502">
+            <TabItem Header="Supplier" Background="Azure">
+                <Grid Background="#FFE5E5E5">
+                    <GroupBox Header="Supplier Detail" HorizontalAlignment="Left" Height="330" VerticalAlignment="Top" Width="195" Background="Aquamarine">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Text="Id"></TextBlock>
+                            <TextBox Name="IdBox" Width="100" Margin="-70,0,0,0" IsReadOnly="True"></TextBox>
+                            <TextBlock Text="Nama"></TextBlock>
+                            <TextBox Name="NamaBox" Width="150" Margin="-20,0,0,0"></TextBox>
+                            <TextBlock Text="Nomor Handphone"></TextBlock>
+                            <TextBox Name="NomorBox" Width="120" Margin="-50,0,0,0" TextChanged="NomorBox_TextChanged"></TextBox>
+                            <TextBlock Text="Alamat"></TextBlock>
+                            <TextBox Name="AlamatBox" Width="150" Height="50" Margin="-20,0,0,0"></TextBox>
+                            <TextBlock Text="Kecamatan"></TextBlock>
+                            <ComboBox Name="KecamatanComboBox" Width="170" ItemsSource="{Binding Path=GetKecamatan}" DisplayMemberPath="Name" SelectedValuePath="Id"></ComboBox>
+                            <TextBlock Text="Kelurahan"></TextBlock>
+                            <ComboBox Name="KelurahanComboBox" Width="170" ItemsSource="{Binding Path=GetKelurahan}" DisplayMemberPath="Name" SelectedValuePath="Id"></ComboBox>
+                            <TextBlock Text="Kode Pos"></TextBlock>
+                            <TextBox Name="KodePosBox" Width="70" Margin="-100,0,0,0"></TextBox>
+                        </StackPanel>
+                    </GroupBox>
+                    <DataGrid AutoGenerateColumns="False" HorizontalAlignment="Left" Height="240" Margin="200,10,0,0" VerticalAlignment="Top" Width="575" Background="CadetBlue">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Id" Binding="{Binding Path=Id}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Nama" Binding="{Binding Path=Name}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Nomor Handphone" Binding="{Binding Path=Phone}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Alamat" Binding="{Binding Path=Address}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Kelurahan" Binding="{Binding Path=Headman}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Kecamatan" Binding="{Binding Path=ViceHeadman}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Kode Pos" Binding="{Binding Path=PostalCode}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Tanggal Bergabung" Binding="{Binding Path=CreateDate}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Tanggal Perubahan Data" Binding="{Binding Path=UpdateDate}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Tanggal Keluar" Binding="{Binding Path=DeleteDate}"></DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <GroupBox Header="Action" HorizontalAlignment="Left" Height="75" VerticalAlignment="Top" Width="575" Margin="200,255,0,0" Background="Aquamarine">
+                        <StackPanel Orientation="Horizontal">
+                            <Button Name="SimpanButton" Width="150" Height="30" Margin="20,0,0,0" Background="LightGreen" Content="SIMPAN" Click="SimpanButton_Click"></Button>
+                            <Button Name="UbahButton" Width="150" Height="30" Margin="40,0,0,0" Background="LightYellow" Content="UBAH" Click="UbahButton_Click"></Button>
+                            <Button Name="HapusButton" Width="150" Height="30" Margin="35,0,0,0" Background="PaleVioletRed" Content="HAPUS" Click="HapusButton_Click"></Button>
+                        </StackPanel>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Item" Background="Azure">
+                <Grid Background="#FFE5E5E5"></Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

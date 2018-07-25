@@ -1,0 +1,9 @@
+C:\Users\Flake\documents\visual studio 2017\Projects\WpfADO\WpfADO.Core\bin\Debug\WpfADO.Core.exe.config
+C:\Users\Flake\documents\visual studio 2017\Projects\WpfADO\WpfADO.Core\bin\Debug\WpfADO.Core.exe
+C:\Users\Flake\documents\visual studio 2017\Projects\WpfADO\WpfADO.Core\bin\Debug\WpfADO.Core.pdb
+C:\Users\Flake\documents\visual studio 2017\Projects\WpfADO\WpfADO.Core\bin\Debug\EntityFramework.dll
+C:\Users\Flake\documents\visual studio 2017\Projects\WpfADO\WpfADO.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Flake\documents\visual studio 2017\Projects\WpfADO\WpfADO.Core\bin\Debug\EntityFramework.xml
+C:\Users\Flake\documents\visual studio 2017\Projects\WpfADO\WpfADO.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Flake\documents\visual studio 2017\Projects\WpfADO\WpfADO.Core\obj\Debug\WpfADO.Core.exe
+C:\Users\Flake\documents\visual studio 2017\Projects\WpfADO\WpfADO.Core\obj\Debug\WpfADO.Core.pdb

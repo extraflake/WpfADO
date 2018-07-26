@@ -29,14 +29,14 @@ namespace WpfADO.DataAccess.Models
             this.CreateDate = createDate;
         }
 
-        public virtual void Update(string name, string phone, string address, string postalCode, int id_Kelurahan, int id_Kecamatan, DateTimeOffset updateDate)
+        public virtual void Update(string name, string phone, string address, string postalCode, Kelurahan id_Kelurahan, Kecamatan id_Kecamatan, DateTimeOffset updateDate)
         {
             this.Name = name;
             this.Phone = phone;
             this.Address = address;
             this.PostalCode = postalCode;
-            this.Kelurahan.Id = id_Kelurahan;
-            this.Kecamatan.Id = id_Kecamatan;
+            this.Kelurahan = id_Kelurahan;
+            this.Kecamatan = id_Kecamatan;
             this.UpdateDate = updateDate;
         }
 

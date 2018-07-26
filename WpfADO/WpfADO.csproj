@@ -116,6 +116,10 @@
       <Project>{E48EC516-BFE6-430E-A0F4-9FC13DA2D1CF}</Project>
       <Name>WpfADO.DataAccess</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WpfADO.Interface\WpfADO.Common.csproj">
+      <Project>{188D91EF-AEF1-4547-8990-F797CB76802B}</Project>
+      <Name>WpfADO.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

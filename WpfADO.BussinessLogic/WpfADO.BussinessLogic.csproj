@@ -58,6 +58,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\WpfADO.Core\WpfADO.Core.csproj">
+      <Project>{0A86D777-9BC3-4419-AFD2-6C446F99D888}</Project>
+      <Name>WpfADO.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WpfADO.DataAccess\WpfADO.DataAccess.csproj">
       <Project>{E48EC516-BFE6-430E-A0F4-9FC13DA2D1CF}</Project>
       <Name>WpfADO.DataAccess</Name>

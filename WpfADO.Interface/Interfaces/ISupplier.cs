@@ -10,10 +10,10 @@ namespace WpfADO.Common.Interfaces
 {
     public interface ISupplier
     {
-        Supplier Get(int id);
+        Supplier Get(int? id);
         IEnumerable<Supplier> Get();
         void Insert(SupplierParam param);
-        void Update(Supplier model);
-        void Delete(Supplier model);
+        void Update(int id, SupplierParam param);
+        void Delete(int id);
     }
 }

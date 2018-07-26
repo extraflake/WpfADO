@@ -51,6 +51,8 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\KecamatanService.cs" />
+    <Compile Include="Services\KelurahanService.cs" />
     <Compile Include="Services\SupplierService.cs" />
   </ItemGroup>
   <ItemGroup>

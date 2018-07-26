@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfADO"
         mc:Ignorable="d"
-        Title="Mitra Integrasi Informatika" Height="400" Width="800">
+        Title="Mitra Integrasi Informatika" Height="400" Width="800"
+        Loaded="Window_Loaded">
     <Grid>
         <TabControl HorizontalAlignment="Left" Height="370" VerticalAlignment="Top" Width="790" RenderTransformOrigin="0.484,0.502">
             <TabItem Header="Supplier" Background="Azure">
@@ -21,21 +22,21 @@
                             <TextBlock Text="Alamat"></TextBlock>
                             <TextBox Name="AlamatBox" Width="150" Height="50" Margin="-20,0,0,0"></TextBox>
                             <TextBlock Text="Kecamatan"></TextBlock>
-                            <ComboBox Name="KecamatanComboBox" Width="170" ItemsSource="{Binding Path=GetKecamatan}" DisplayMemberPath="Name" SelectedValuePath="Id"></ComboBox>
+                            <ComboBox Name="KecamatanComboBox" Width="170" ItemsSource="{Binding Path=getKecamatan}" DisplayMemberPath="Name" SelectedValuePath="Id"></ComboBox>
                             <TextBlock Text="Kelurahan"></TextBlock>
-                            <ComboBox Name="KelurahanComboBox" Width="170" ItemsSource="{Binding Path=GetKelurahan}" DisplayMemberPath="Name" SelectedValuePath="Id"></ComboBox>
+                            <ComboBox Name="KelurahanComboBox" Width="170" ItemsSource="{Binding Path=getKelurahan}" DisplayMemberPath="Name" SelectedValuePath="Id"></ComboBox>
                             <TextBlock Text="Kode Pos"></TextBlock>
                             <TextBox Name="KodePosBox" Width="70" Margin="-100,0,0,0"></TextBox>
                         </StackPanel>
                     </GroupBox>
-                    <DataGrid AutoGenerateColumns="False" HorizontalAlignment="Left" Height="240" Margin="200,10,0,0" VerticalAlignment="Top" Width="575" Background="CadetBlue">
+                    <DataGrid Name="SupplierGrid" AutoGenerateColumns="False" HorizontalAlignment="Left" Height="240" Margin="200,10,0,0" VerticalAlignment="Top" Width="575" Background="CadetBlue" SelectedCellsChanged="SupplierGrid_SelectedCellsChanged">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Id" Binding="{Binding Path=Id}"></DataGridTextColumn>
                             <DataGridTextColumn Header="Nama" Binding="{Binding Path=Name}"></DataGridTextColumn>
                             <DataGridTextColumn Header="Nomor Handphone" Binding="{Binding Path=Phone}"></DataGridTextColumn>
                             <DataGridTextColumn Header="Alamat" Binding="{Binding Path=Address}"></DataGridTextColumn>
-                            <DataGridTextColumn Header="Kelurahan" Binding="{Binding Path=Headman}"></DataGridTextColumn>
-                            <DataGridTextColumn Header="Kecamatan" Binding="{Binding Path=ViceHeadman}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Kelurahan" Binding="{Binding Path=Kelurahan.Name}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Kecamatan" Binding="{Binding Path=Kecamatan.Name}"></DataGridTextColumn>
                             <DataGridTextColumn Header="Kode Pos" Binding="{Binding Path=PostalCode}"></DataGridTextColumn>
                             <DataGridTextColumn Header="Tanggal Bergabung" Binding="{Binding Path=CreateDate}"></DataGridTextColumn>
                             <DataGridTextColumn Header="Tanggal Perubahan Data" Binding="{Binding Path=UpdateDate}"></DataGridTextColumn>

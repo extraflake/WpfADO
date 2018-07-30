@@ -3,16 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WpfADO.BussinessLogic.Repositories;
 using WpfADO.Common.Interfaces;
 using WpfADO.DataAccess.Context;
 using WpfADO.DataAccess.Models;
 using WpfADO.DataAccess.Params;
+using WpfADO.Interface.Repository;
 
 namespace WpfADO.BussinessLogic.Services
 {
     public class SupplierService : ISupplier
     {
         ApplicationContext _context = new ApplicationContext();
+        ISupplierRepository _supplierRepository = new SupplierRepository();
+
         public void Delete(int id)
         {
             var getSupplier = Get(id);
@@ -27,7 +31,7 @@ namespace WpfADO.BussinessLogic.Services
                 Console.Write("Id not found in Application");
             }
             var getSupplier = _context.Suppliers.Find(id);
-            if(getSupplier == null)
+            if (getSupplier == null)
             {
                 Console.Write("Id not found in Database");
             }
@@ -44,9 +48,17 @@ namespace WpfADO.BussinessLogic.Services
         {
             var getKecataman = _context.Kecamatans.Find(param.Id_Kecamatan);
             var getKelurahan = _context.Kelurahans.Find(param.Id_Kelurahan);
-            Supplier insert = new Supplier(param.Name, param.Phone, param.Address, param.PostalCode, getKelurahan, getKecataman, DateTimeOffset.UtcNow.LocalDateTime);
-            _context.Suppliers.Add(insert);
-            _context.SaveChanges();
+            try
+            {
+                Supplier push = new Supplier(param.Name, param.Phone, param.Address, param.PostalCode, getKelurahan, getKecataman, DateTimeOffset.UtcNow.LocalDateTime);
+                _supplierRepository.Save(push);
+            }
+            catch (Exception ex)
+            {
+                Console.Write(ex.InnerException);
+                Console.Write(ex.StackTrace);
+                Console.Write(ex.Message);
+            }
         }
 
         public void Update(int id, SupplierParam param)

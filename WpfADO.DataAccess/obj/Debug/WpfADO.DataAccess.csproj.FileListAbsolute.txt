@@ -29,6 +29,8 @@ C:\Users\Flake\Documents\Visual Studio 2017\Git\WpfADO\WpfADO.DataAccess\obj\Deb
 C:\Users\Flake\Documents\Visual Studio 2017\Git\WpfADO\WpfADO.DataAccess\obj\Debug\WpfADO.DataAccess.Migrations.initial.resources
 C:\Users\Flake\Documents\Visual Studio 2017\Git\WpfADO\WpfADO.DataAccess\obj\Debug\WpfADO.DataAccess.Migrations.fixingmodel.resources
 C:\Users\Flake\Documents\Visual Studio 2017\Git\WpfADO\WpfADO.DataAccess\obj\Debug\WpfADO.DataAccess.Migrations.fixingmodelv2.resources
+C:\Users\Flake\Documents\Visual Studio 2017\Git\WpfADO\WpfADO.DataAccess\obj\Debug\WpfADO.DataAccess.Migrations.addingmodelitem.resources
+C:\Users\Flake\Documents\Visual Studio 2017\Git\WpfADO\WpfADO.DataAccess\obj\Debug\WpfADO.DataAccess.Migrations.addingmodelitem1.resources
 C:\Users\Flake\Documents\Visual Studio 2017\Git\WpfADO\WpfADO.DataAccess\obj\Debug\WpfADO.DataAccess.csproj.GenerateResource.Cache
 C:\Users\Flake\Documents\Visual Studio 2017\Git\WpfADO\WpfADO.DataAccess\obj\Debug\WpfADO.DataAccess.exe
 C:\Users\Flake\Documents\Visual Studio 2017\Git\WpfADO\WpfADO.DataAccess\obj\Debug\WpfADO.DataAccess.pdb

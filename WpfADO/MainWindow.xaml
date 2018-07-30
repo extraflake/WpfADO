@@ -22,7 +22,7 @@
                             <TextBlock Text="Alamat"></TextBlock>
                             <TextBox Name="AlamatBox" Width="150" Height="50" Margin="-20,0,0,0"></TextBox>
                             <TextBlock Text="Kecamatan"></TextBlock>
-                            <ComboBox Name="KecamatanComboBox" Width="170" ItemsSource="{Binding Path=getKecamatan}" DisplayMemberPath="Name" SelectedValuePath="Id"></ComboBox>
+                            <ComboBox Name="KecamatanComboBox" Width="170" ItemsSource="{Binding Path=getKecamatan}" DisplayMemberPath="Name" SelectedValuePath="Id" SelectionChanged="KecamatanComboBox_SelectionChanged"></ComboBox>
                             <TextBlock Text="Kelurahan"></TextBlock>
                             <ComboBox Name="KelurahanComboBox" Width="170" ItemsSource="{Binding Path=getKelurahan}" DisplayMemberPath="Name" SelectedValuePath="Id"></ComboBox>
                             <TextBlock Text="Kode Pos"></TextBlock>

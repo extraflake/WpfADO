@@ -107,9 +107,22 @@ namespace WpfADO
 
         public void LoadGridCombo()
         {
-            SupplierGrid.ItemsSource = _supplier.Get();
-            KecamatanComboBox.ItemsSource = _kecamatan.Get();
-            KelurahanComboBox.ItemsSource = _kelurahan.Get();
+            try
+            {
+                SupplierGrid.ItemsSource = _supplier.Get();
+                KecamatanComboBox.ItemsSource = _kecamatan.Get();
+            }
+            catch (Exception ex)
+            {
+                Console.Write(ex.InnerException);
+                Console.Write(ex.StackTrace);
+            }
+        }
+
+        private void KecamatanComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var getKecamatan = Convert.ToInt16(KecamatanComboBox.SelectedValue);
+            KelurahanComboBox.ItemsSource = _kelurahan.Get(getKecamatan);
         }
 
         private void SupplierGrid_SelectedCellsChanged(object sender, SelectedCellsChangedEventArgs e)

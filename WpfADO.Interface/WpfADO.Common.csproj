@@ -49,11 +49,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IItem.cs" />
     <Compile Include="Interfaces\IKecamatan.cs" />
     <Compile Include="Interfaces\IKelurahan.cs" />
     <Compile Include="Interfaces\ISupplier.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\ISupplierRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

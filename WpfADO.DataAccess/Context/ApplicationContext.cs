@@ -8,12 +8,13 @@ using WpfADO.DataAccess.Models;
 
 namespace WpfADO.DataAccess.Context
 {
-    public class ApplicationContext : DbContext
+    public class ApplicationContext : DbContext 
     {
         public ApplicationContext() : base("WpfADO") { }
 
         public DbSet<Supplier> Suppliers { get; set; }
         public DbSet<Kelurahan> Kelurahans { get; set; }
         public DbSet<Kecamatan> Kecamatans { get; set; }
+        public DbSet<Item> Items { get; set; }
     }
 }
